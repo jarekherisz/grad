@@ -30,7 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Grad\\CoreBundle\\": "lib/CoreBundle/src/"
         }
     },
     "autoload-dev": {
