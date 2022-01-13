@@ -12,6 +12,10 @@ class IndexController extends AbstractController
     #[Route('/', name: 'app')]
     public function index(ManagerRegistry $doctrine)
     {
+        $products = $doctrine->getRepository(User::class)->findAll();
 
+        var_dump($products);
+        echo "po";
+        die();
     }
 }
