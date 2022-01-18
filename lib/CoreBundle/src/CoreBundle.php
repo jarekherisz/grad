@@ -5,10 +5,10 @@ namespace Grad\CoreBundle;
 use Grad\CoreBundle\DependencyInjection\AddConsoleCommandPass;
 use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Grad\CoreBundle\Component\HttpKernel\GradBundle\GradBundle;
 use Symfony\Component\Config\Resource\ClassExistenceResource;
 
-class CoreBundle extends Bundle
+class CoreBundle extends GradBundle
 {
 
     public function build(ContainerBuilder $container)
@@ -25,5 +25,10 @@ class CoreBundle extends Bundle
         if (class_exists($class)) {
             $container->addCompilerPass(new $class(), $type, $priority);
         }
+    }
+
+    public function getVersion()
+    {
+        return '0.0.1';
     }
 }
