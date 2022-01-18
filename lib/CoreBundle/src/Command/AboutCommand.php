@@ -8,7 +8,7 @@ use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\HttpKernel\Kernel;
+use App\Kernel;
 use Symfony\Component\HttpKernel\KernelInterface;
 
 class AboutCommand extends Command
@@ -38,11 +38,12 @@ class AboutCommand extends Command
 
         $rows = [
             ['<info>Grad</>'],
+            ['Version', Kernel::GRAD_VERSION],
             new TableSeparator(),
-            ['Version', 'pppppp'],
+            ['<info>Symfony</>'],
+            ['Version', Kernel::VERSION],
             new TableSeparator(),
             ['<info>PHP</>'],
-            new TableSeparator(),
             ['Version', \PHP_VERSION],
             ['Architecture', (\PHP_INT_SIZE * 8).' bits'],
             ['Intl locale', class_exists(\Locale::class, false) && \Locale::getDefault() ? \Locale::getDefault() : 'n/a'],
