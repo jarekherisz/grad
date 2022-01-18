@@ -8,6 +8,9 @@
         <service id="Grad\CoreBundle\Command\AboutCommand">
             <tag name="grad.command"/>
         </service>
+        <service id="Grad\CoreBundle\Command\ModuleListCommand">
+            <tag name="grad.command"/>
+        </service>
 
         <service id="Grad\CoreBundle\Repository\UserRepository">
             <tag name="doctrine.repository_service"/>
