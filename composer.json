@@ -32,7 +32,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "Grad\\CoreBundle\\": "lib/CoreBundle/src/"
+            "Grad\\CoreBundle\\": "lib/CoreBundle/src/",
+            "Grad\\UserBundle\\": "lib/UserBundle/src/"
         }
     },
     "autoload-dev": {
