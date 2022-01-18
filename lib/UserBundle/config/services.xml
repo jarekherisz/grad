@@ -4,7 +4,7 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="Grad\CoreBundle\Repository\UserRepository">
+        <service id="Grad\UserBundle\Repository\UserRepository">
             <tag name="doctrine.repository_service"/>
             <argument type="service" id="doctrine" />
         </service>

@@ -2,7 +2,7 @@
 
 namespace Grad\UserBundle\Repository;
 
-use Grad\CoreBundle\Entity\User;
+use Grad\UserBundle\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

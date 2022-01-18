@@ -2,7 +2,7 @@
 
 namespace Grad\UserBundle\Entity;
 
-use Grad\CoreBundle\Repository\UserRepository;
+use Grad\UserBundle\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]

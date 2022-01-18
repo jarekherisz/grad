@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use Grad\CoreBundle\Entity\User;
+use Grad\UserBundle\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
