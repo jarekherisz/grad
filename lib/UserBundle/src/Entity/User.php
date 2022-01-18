@@ -1,6 +1,6 @@
 <?php
 
-namespace Grad\CoreBundle\Entity;
+namespace Grad\UserBundle\Entity;
 
 use Grad\CoreBundle\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Grad\CoreBundle\Repository;
+namespace Grad\UserBundle\Repository;
 
 use Grad\CoreBundle\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
