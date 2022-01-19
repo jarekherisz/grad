@@ -4,15 +4,15 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="Grad\CoreBundle\Repository\ModuleVersionRepository">
+        <service id="grad.core_bundle.repository.module_version_repository" class="Grad\CoreBundle\Repository\ModuleVersionRepository">
             <tag name="doctrine.repository_service"/>
             <argument type="service" id="doctrine" />
         </service>
-        <service id="Grad\CoreBundle\Command\AboutCommand">
+        <service id="grad.core_bundle.command.about_command" class="Grad\CoreBundle\Command\AboutCommand">
             <tag name="grad.command"/>
         </service>
-        <service id="Grad\CoreBundle\Command\ModuleListCommand">
-            <argument type="service" id="Grad\CoreBundle\Repository\ModuleVersionRepository" />
+        <service id="grad.core_bundle.command.module_list_command" class="Grad\CoreBundle\Command\ModuleListCommand">
+            <argument type="service" id="grad.core_bundle.repository.module_version_repository" />
             <tag name="grad.command"/>
         </service>
     </services>
